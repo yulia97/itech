@@ -12,9 +12,10 @@ module.exports = function(app){
 
 
 
+
     app.post('/user', UserController.newUser)
-
-
+    
+    
 }
 
 
