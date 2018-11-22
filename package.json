@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async-request": "^1.2.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongoose": "^5.3.7",
-    "nodemon": "^1.18.5"
+    "nodemon": "^1.18.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }
