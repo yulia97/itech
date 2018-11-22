@@ -13,7 +13,11 @@ module.exports = function(app){
 
 
 
-    app.post('/user', UserController.newUser)
+    app.post('/user', UserController.create)
+    app.get('/user/:id', UserController.get)
+    app.get('/user', UserController.getAll)
+    app.delete('/user/:id', UserController.remove)
+    app.put('/user/:id', UserController.update)
     
     
 }
