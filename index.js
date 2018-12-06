@@ -1,4 +1,11 @@
+
 const express = require('express')
+
+const passport = require('passport')
+require('./config/passport.js')(passport)
+
+
+ 
 const app = express()
 const port = 3000
 const host = "192.168.56.101"
@@ -21,7 +28,7 @@ db.once('open', function() {
     console.log('Nice! Database looks fine');
 });
 
-require('./router.js')(app)
+require('./router.js')(app, passport)
 
 var server = app.listen(port, host, () => {
     var host = server.address().address
